@@ -100,3 +100,6 @@ Strainerfile
 ###########
 .vagrant
 Vagrantfile
+
+.github/*
+tasks/*
