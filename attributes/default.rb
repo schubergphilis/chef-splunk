@@ -67,6 +67,9 @@ default['splunk']['shclustering'] = {
   'deployer_url' => '',
   'mgmt_uri' => "https://#{node['fqdn']}:8089",
   'shcluster_members' => [],
+  'search' => "splunk_clustering_enabled:true AND \
+    splunk_clustering_mode:master AND \
+    chef_environment:#{node.chef_environment}"
 }
 
 # Add key value pairs to this to add configuration pairs to the output.conf file
