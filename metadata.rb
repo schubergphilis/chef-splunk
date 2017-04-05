@@ -9,7 +9,7 @@ version '1.6.1001'
 # for secrets management in setup_auth recipe
 depends 'chef-vault', '>= 1.0.4'
 
-source_url 'https://github.com/chef-cookbooks/chef-splunk'
-issues_url 'https://github.com/chef-cookbooks/chef-splunk/issues'
+source_url 'https://github.com/chef-cookbooks/chef-splunk' if respond_to?(:source_url)
+issues_url 'https://github.com/chef-cookbooks/chef-splunk/issues' if respond_to?(:issues_url)
 
-chef_version '>= 12.1'
+chef_version '>= 12.1' if respond_to?(:chef_version)
