@@ -71,6 +71,8 @@ Rakefile
 .gitconfig
 .gitattributes
 .svn
+.github/*
+.delivery/*
 */.bzr/*
 */.hg/*
 */.svn/*
